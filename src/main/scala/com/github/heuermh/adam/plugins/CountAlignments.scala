@@ -15,8 +15,8 @@
  */
 package com.github.heuermh.adam.plugins
 
-import edu.berkeley.cs.amplab.adam.avro.ADAMRecord
-import edu.berkeley.cs.amplab.adam.plugins.AdamPlugin
+import org.bdgenomics.adam.avro.ADAMRecord
+import org.bdgenomics.adam.plugins.ADAMPlugin
 import org.apache.avro.Schema
 import org.apache.spark.rdd.RDD
 import org.apache.spark.SparkContext
@@ -27,7 +27,7 @@ import org.apache.spark.SparkContext._
  * 
  * @author  Michael Heuer
  */
-class CountAlignments extends AdamPlugin[ADAMRecord, Tuple2[CharSequence, Int]] with Serializable {
+class CountAlignments extends ADAMPlugin[ADAMRecord, Tuple2[CharSequence, Int]] with Serializable {
    override def projection: Option[Schema] = None
    override def predicate: Option[(ADAMRecord) => Boolean] = None
 

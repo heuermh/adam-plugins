@@ -35,7 +35,7 @@
     </developer>
   </developers>
   <properties>
-    <adam.version>0.7.1</adam.version>
+    <adam.version>0.8.1-SNAPSHOT</adam.version>
     <scala.version>2.10.3</scala.version>
     <scala.artifact.suffix>2.10</scala.artifact.suffix>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -250,17 +250,17 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>edu.berkeley.cs.amplab.adam</groupId>
+        <groupId>org.bdgenomics.adam</groupId>
         <artifactId>adam-cli</artifactId>
         <version>${adam.version}</version>
       </dependency>
       <dependency>
-        <groupId>edu.berkeley.cs.amplab.adam</groupId>
+        <groupId>org.bdgenomics.adam</groupId>
         <artifactId>adam-core</artifactId>
         <version>${adam.version}</version>
       </dependency>
       <dependency>
-        <groupId>edu.berkeley.cs.amplab.adam</groupId>
+        <groupId>org.bdgenomics.adam</groupId>
         <artifactId>adam-core</artifactId>
         <version>${adam.version}</version>
         <type>test-jar</type>
@@ -274,17 +274,17 @@
   </dependencyManagement>
   <dependencies>
     <dependency>
-      <groupId>edu.berkeley.cs.amplab.adam</groupId>
+      <groupId>org.bdgenomics.adam</groupId>
       <artifactId>adam-cli</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>edu.berkeley.cs.amplab.adam</groupId>
+      <groupId>org.bdgenomics.adam</groupId>
       <artifactId>adam-core</artifactId>
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>edu.berkeley.cs.amplab.adam</groupId>
+      <groupId>org.bdgenomics.adam</groupId>
       <artifactId>adam-core</artifactId>
       <type>test-jar</type>
       <scope>test</scope>

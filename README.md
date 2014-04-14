@@ -23,10 +23,11 @@ To add the plugins in this repository to the ADAM command line
 
     $ cp target/adam-plugins-1.0-SNAPSHOT.jar $ADAM_DIR
     $ cd $ADAM_DIR
-    $ java -classpath "adam-cli/target/adam-$VERSION.jar:adam-plugins-$VERSION.jar" org.bdgenomics.adam.cli.ADAMMain
+    $ java -classpath "adam-cli/target/adam-$VERSION.jar:adam-plugins-$VERSION.jar" \
+            org.bdgenomics.adam.cli.ADAMMain
 
 
-Examples
+####Examples
 
     $ java -classpath adam-cli/target/adam-0.9.1-SNAPSHOT.jar:adam-plugins-1.0-SNAPSHOT.jar \
             org.bdgenomics.adam.cli.ADAMMain \

@@ -9,7 +9,7 @@
   <groupId>com.github.heuermh.adamplugins</groupId>
   <artifactId>adam-plugins</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>pom</packaging>
+  <packaging>jar</packaging>
 
   <name>adam-plugins</name>
   <description>External plugins for ADAM: Genomic Data System.</description>

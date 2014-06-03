@@ -11,7 +11,7 @@ Install
  * JDK 1.7 or later, http://openjdk.java.net
  * Scala 2.10.3 or later, http://www.scala-lang.org
  * Apache Maven 3.2.1 or later, http://maven.apache.org
- * ADAM: Genomic Data System 0.9.0 or later, https://github.com/bigdatagenomics/adam
+ * ADAM: Genomic Data System 0.11.0 or later, https://github.com/bigdatagenomics/adam
 
 
 To build
@@ -29,7 +29,7 @@ To add the plugins in this repository to the ADAM command line
 
 ####Examples
 
-    $ java -classpath adam-cli/target/adam-0.9.1-SNAPSHOT.jar:adam-plugins-1.0-SNAPSHOT.jar \
+    $ java -classpath adam-cli/target/adam-0.11.1-SNAPSHOT.jar:adam-plugins-1.0-SNAPSHOT.jar \
             org.bdgenomics.adam.cli.ADAMMain \
             plugin com.github.heuermh.adam.plugins.CountAlignments \
             adam-core/src/test/resources/small.sam 
@@ -38,7 +38,7 @@ To add the plugins in this repository to the ADAM command line
     (unmapped,10)
 
 
-    $ java -classpath adam-cli/target/adam-0.9.1-SNAPSHOT.jar:adam-plugins-1.0-SNAPSHOT.jar \
+    $ java -classpath adam-cli/target/adam-0.11.1-SNAPSHOT.jar:adam-plugins-1.0-SNAPSHOT.jar \
             org.bdgenomics.adam.cli.ADAMMain \
             plugin com.github.heuermh.adam.plugins.CountAlignmentsPerRead \
             adam-core/src/test/resources/small.sam 

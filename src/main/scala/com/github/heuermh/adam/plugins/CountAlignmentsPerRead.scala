@@ -31,7 +31,7 @@ class CountAlignmentsPerRead extends ADAMPlugin[ADAMRecord, Tuple2[CharSequence,
    override def projection: Option[Schema] = None
    override def predicate: Option[(ADAMRecord) => Boolean] = None
 
-   override def run(sc: SparkContext, recs: RDD[ADAMRecord]): RDD[Tuple2[CharSequence, Int]] = {
+   override def run(sc: SparkContext, recs: RDD[ADAMRecord], args: String): RDD[Tuple2[CharSequence, Int]] = {
      recs.map(rec => if (rec.getReadMapped) rec.getReadName else "unmapped")
        .map(readName => (readName, 1))
        .reduceByKey(_ + _)

@@ -16,8 +16,8 @@
   <url>http://github.com/heuermh/adam-plugins</url>
   <inceptionYear>2014</inceptionYear>
   <scm>
-    <connection>scm:git:https://github.com:heuermh/adam-plugins</connection>
-    <developerConnection>scm:git:https://github.com:heuermh/adam-plugins</developerConnection>
+    <connection>scm:git:https://github.com/heuermh/adam-plugins</connection>
+    <developerConnection>scm:git:https://github.com/heuermh/adam-plugins</developerConnection>
     <url>https://github.com/heuermh/adam-plugins.git</url>
     <tag>HEAD</tag>
   </scm>

@@ -18,7 +18,7 @@ package com.github.heuermh.adam.plugins;
 /**
  * Empty class just to make javadoc happy.
  */
-protected final class Empty
+public final class Empty
 {
     // empty
 }

@@ -194,9 +194,9 @@
           </jvmArgs>
           <javacArgs>
             <javacArg>-source</javacArg>
-            <javacArg>${java.version}</javacArg>
+            <javacArg>${maven.compile.source}</javacArg>
             <javacArg>-target</javacArg>
-            <javacArg>${java.version}</javacArg>
+            <javacArg>${maven.compile.target}</javacArg>
           </javacArgs>
         </configuration>
       </plugin>

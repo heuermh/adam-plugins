@@ -8,7 +8,7 @@
   </parent>
   <groupId>com.github.heuermh.adamplugins</groupId>
   <artifactId>adam-plugins</artifactId>
-  <version>0.12.1-SNAPSHOT</version>
+  <version>0.12.2-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>adam-plugins</name>
@@ -35,7 +35,7 @@
     </developer>
   </developers>
   <properties>
-    <adam.version>0.12.0</adam.version>
+    <adam.version>0.12.2-SNAPSHOT</adam.version>
     <scala.version>2.10.3</scala.version>
     <scala.artifact.suffix>2.10</scala.artifact.suffix>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

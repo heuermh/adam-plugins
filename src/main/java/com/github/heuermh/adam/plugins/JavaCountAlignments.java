@@ -30,6 +30,8 @@ import org.apache.spark.api.java.function.Function;
 import org.apache.spark.api.java.function.Function2;
 import org.apache.spark.api.java.function.PairFunction;
 
+import org.bdgenomics.adam.apis.java.JavaADAMContext;
+
 import org.bdgenomics.adam.plugins.ADAMPlugin;
 
 import org.bdgenomics.formats.avro.ADAMRecord;
@@ -43,23 +45,12 @@ import scala.Tuple2;
  *
  * @author  Michael Heuer
  */
-public final class JavaCountAlignments implements ADAMPlugin<ADAMRecord, Tuple2<CharSequence, Integer>>, Serializable {
+public final class JavaCountAlignments extends JavaADAMPlugin<ADAMRecord, Tuple2<CharSequence, Integer>> implements Serializable {
 
     @Override
-    public Option<Function1<ADAMRecord, Object>> predicate() {
-        return Option.empty();
-    }
+    public JavaRDD<Tuple2<CharSequence, Integer>> run(final JavaADAMContext ac, final JavaRDD<ADAMRecord> recs, final String args) {
 
-    @Override
-    public Option<Schema> projection() {
-        return Option.empty();
-    }
-
-    @Override
-    public RDD<Tuple2<CharSequence, Integer>> run(final SparkContext sparkContext, final RDD<ADAMRecord> recs, final String args) {
-        JavaRDD<ADAMRecord> javaRecs = JavaRDD.fromRDD(recs, null);
-
-        JavaRDD<CharSequence> contigNames = javaRecs.map(new Function<ADAMRecord, CharSequence>() {
+        JavaRDD<CharSequence> contigNames = recs.map(new Function<ADAMRecord, CharSequence>() {
                 @Override
                 public CharSequence call(final ADAMRecord rec) {
                     return rec.getReadMapped() ? rec.getContig().getContigName() : "unmapped";
@@ -80,6 +71,7 @@ public final class JavaCountAlignments implements ADAMPlugin<ADAMRecord, Tuple2<
                 }
             });
 
-        return reducedCounts.rdd();
+        // todo:  seems like there should be a more direct way
+        return JavaRDD.fromRDD(reducedCounts.rdd(), null);
     }
 }

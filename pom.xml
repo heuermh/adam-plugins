@@ -251,6 +251,11 @@
     <dependencies>
       <dependency>
         <groupId>org.bdgenomics.adam</groupId>
+        <artifactId>adam-apis</artifactId>
+        <version>0.12.2-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.bdgenomics.adam</groupId>
         <artifactId>adam-cli</artifactId>
         <version>0.12.2-SNAPSHOT</version>
       </dependency>
@@ -273,6 +278,11 @@
     </dependencies>
   </dependencyManagement>
   <dependencies>
+    <dependency>
+      <groupId>org.bdgenomics.adam</groupId>
+      <artifactId>adam-apis</artifactId>
+      <scope>compile</scope>
+    </dependency>
     <dependency>
       <groupId>org.bdgenomics.adam</groupId>
       <artifactId>adam-cli</artifactId>

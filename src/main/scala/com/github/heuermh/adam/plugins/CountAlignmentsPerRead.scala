@@ -16,7 +16,7 @@
 package com.github.heuermh.adam.plugins
 
 import org.bdgenomics.adam.plugins.ADAMPlugin
-import org.bdgenomics.formats.avro.ADAMRecord
+import org.bdgenomics.formats.avro.AlignmentRecord
 import org.apache.avro.Schema
 import org.apache.spark.rdd.RDD
 import org.apache.spark.SparkContext
@@ -27,11 +27,11 @@ import org.apache.spark.SparkContext._
  * 
  * @author  Michael Heuer
  */
-class CountAlignmentsPerRead extends ADAMPlugin[ADAMRecord, Tuple2[CharSequence, Int]] with Serializable {
+class CountAlignmentsPerRead extends ADAMPlugin[AlignmentRecord, Tuple2[CharSequence, Int]] with Serializable {
    override def projection: Option[Schema] = None
-   override def predicate: Option[(ADAMRecord) => Boolean] = None
+   override def predicate: Option[(AlignmentRecord) => Boolean] = None
 
-   override def run(sc: SparkContext, recs: RDD[ADAMRecord], args: String): RDD[Tuple2[CharSequence, Int]] = {
+   override def run(sc: SparkContext, recs: RDD[AlignmentRecord], args: String): RDD[Tuple2[CharSequence, Int]] = {
      recs.map(rec => if (rec.getReadMapped) rec.getReadName else "unmapped")
        .map(readName => (readName, 1))
        .reduceByKey(_ + _)

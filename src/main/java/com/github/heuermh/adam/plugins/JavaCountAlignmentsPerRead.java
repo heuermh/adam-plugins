@@ -34,7 +34,7 @@ import org.bdgenomics.adam.apis.java.JavaADAMContext;
 
 import org.bdgenomics.adam.plugins.ADAMPlugin;
 
-import org.bdgenomics.formats.avro.ADAMRecord;
+import org.bdgenomics.formats.avro.AlignmentRecord;
 
 import scala.Function1;
 import scala.Option;
@@ -45,14 +45,14 @@ import scala.Tuple2;
  *
  * @author  Michael Heuer
  */
-public final class JavaCountAlignmentsPerRead extends JavaADAMPlugin<ADAMRecord, Tuple2<CharSequence, Integer>> implements Serializable {
+public final class JavaCountAlignmentsPerRead extends JavaADAMPlugin<AlignmentRecord, Tuple2<CharSequence, Integer>> implements Serializable {
 
     @Override
-    public JavaRDD<Tuple2<CharSequence, Integer>> run(final JavaADAMContext ac, final JavaRDD<ADAMRecord> recs, final String args) {
+    public JavaRDD<Tuple2<CharSequence, Integer>> run(final JavaADAMContext ac, final JavaRDD<AlignmentRecord> recs, final String args) {
 
-        JavaRDD<CharSequence> contigNames = recs.map(new Function<ADAMRecord, CharSequence>() {
+        JavaRDD<CharSequence> contigNames = recs.map(new Function<AlignmentRecord, CharSequence>() {
                 @Override
-                public CharSequence call(final ADAMRecord rec) {
+                public CharSequence call(final AlignmentRecord rec) {
                     return rec.getReadMapped() ? rec.getReadName() : "unmapped";
                 }
             });

@@ -11,7 +11,7 @@ Install
  * JDK 1.7 or later, http://openjdk.java.net
  * Scala 2.10.3 or later, http://www.scala-lang.org
  * Apache Maven 3.2.1 or later, http://maven.apache.org
- * ADAM: Genomic Data System 0.12.1 or later, https://github.com/bigdatagenomics/adam
+ * ADAM: Genomic Data System 0.13.0 or later, https://github.com/bigdatagenomics/adam
 
 
 To build
@@ -21,14 +21,14 @@ To build
 
 To add the plugins in this repository to the ADAM command line, add the jar to ```$CLASSPATH_PREFIX```
 
-    $ cp target/adam-plugins-0.12.2-SNAPSHOT.jar $ADAM_DIR
+    $ cp target/adam-plugins-0.13.1-SNAPSHOT.jar $ADAM_DIR
     $ cd $ADAM_DIR
-    $ CLASSPATH_PREFIX=adam-plugins-0.12.2-SNAPSHOT.jar sh adam-cli/target/appassembler/bin/adam
+    $ CLASSPATH_PREFIX=adam-plugins-0.13.1-SNAPSHOT.jar sh adam-cli/target/appassembler/bin/adam
 
 
 ####Examples
 
-    $ CLASSPATH_PREFIX=adam-plugins-0.12.2-SNAPSHOT.jar \
+    $ CLASSPATH_PREFIX=adam-plugins-0.13.1-SNAPSHOT.jar \
             sh adam-cli/target/appassembler/bin/adam \
             plugin com.github.heuermh.adam.plugins.CountAlignments \
             adam-core/src/test/resources/small.sam
@@ -36,7 +36,7 @@ To add the plugins in this repository to the ADAM command line, add the jar to `
     (1,20)
 
 
-    $ CLASSPATH_PREFIX=adam-plugins-0.12.2-SNAPSHOT.jar \
+    $ CLASSPATH_PREFIX=adam-plugins-0.13.1-SNAPSHOT.jar \
             sh adam-cli/target/appassembler/bin/adam \
             plugin com.github.heuermh.adam.plugins.CountAlignmentsPerRead \
             adam-core/src/test/resources/small.sam

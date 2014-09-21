@@ -9,8 +9,8 @@ External plugins for ADAM: Genomic Data System
 Install
 
  * JDK 1.7 or later, http://openjdk.java.net
- * Scala 2.10.3 or later, http://www.scala-lang.org
- * Apache Maven 3.2.1 or later, http://maven.apache.org
+ * Scala 2.10.4 or later, http://www.scala-lang.org
+ * Apache Maven 3.2.3 or later, http://maven.apache.org
  * ADAM: Genomic Data System 0.14.0 or later, https://github.com/bigdatagenomics/adam
 
 

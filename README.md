@@ -1,7 +1,7 @@
 adam-plugins
 ============
 
-External plugins for ADAM: Genomic Data System
+External plugins in Java and Scala for ADAM: Genomic Data System.  Apache 2 licensed.
 
 
 ###Hacking adam-plugins

@@ -29,14 +29,14 @@ To add the plugins in this repository to the ADAM command line, add the jar to `
 
 ####Examples
 
-    $ ADDL_JARS=adam-plugins-0.15.1-SNAPSHOT.jar bin/adam-submit
+    $ ADDL_JARS=adam-plugins-0.15.1-SNAPSHOT.jar bin/adam-submit \
             plugin com.github.heuermh.adam.plugins.CountAlignments \
             adam-core/src/test/resources/small.sam
      
     (1,20)
 
 
-    $ ADDL_JARS=adam-plugins-0.15.1-SNAPSHOT.jar bin/adam-submit
+    $ ADDL_JARS=adam-plugins-0.15.1-SNAPSHOT.jar bin/adam-submit \
             plugin com.github.heuermh.adam.plugins.CountAlignmentsPerRead \
             adam-core/src/test/resources/small.sam
      

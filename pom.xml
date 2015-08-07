@@ -7,11 +7,11 @@
     <version>9</version>
   </parent>
   <groupId>com.github.heuermh.adamplugins</groupId>
-  <artifactId>adam-plugins_2.11</artifactId>
+  <artifactId>adam-plugins_2.10</artifactId>
   <version>0.17.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>adam-plugins_2.11</name>
+  <name>adam-plugins_2.10</name>
   <description>External plugins for ADAM: Genomic Data System.</description>
   <url>http://github.com/heuermh/adam-plugins</url>
   <inceptionYear>2014</inceptionYear>
@@ -36,8 +36,8 @@
   </developers>
   <properties>
     <adam.version>0.17.0</adam.version>
-    <scala.version>2.11.4</scala.version>
-    <scala.artifact.suffix>2.11</scala.artifact.suffix>
+    <scala.version>2.10.4</scala.version>
+    <scala.artifact.suffix>2.10</scala.artifact.suffix>
     <spark.version>1.2.0</spark.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.build.targetEncoding>UTF-8</project.build.targetEncoding>

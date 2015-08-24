@@ -12,7 +12,7 @@ Install
  * Scala 2.10.4 or later, http://www.scala-lang.org
  * Apache Maven 3.2.5 or later, http://maven.apache.org
  * Apache Spark 1.2.0 or later, http://spark.apache.org
- * ADAM: Genomic Data System 0.17.1-SNAPSHOT or later, https://github.com/bigdatagenomics/adam
+ * ADAM: Genomic Data System 0.17.2-SNAPSHOT or later, https://github.com/bigdatagenomics/adam
 
 
 To build
@@ -22,14 +22,14 @@ To build
 
 To run the plugins in this repository via the ADAM command line, add the jar to the classpath with the Spark ```--jars``` argument.  Note the ```--``` argument separator between Spark arguments and ADAM arguments.
 
-    $ cp target/adam-plugins_2.10-0.17.1-SNAPSHOT.jar $ADAM_DIR
+    $ cp target/adam-plugins_2.10-0.17.2-SNAPSHOT.jar $ADAM_DIR
     $ cd $ADAM_DIR
 
 
 ####Examples
 
     $ ./bin/adam-submit \
-          --jars adam-plugins_2.10-0.17.1-SNAPSHOT.jar \
+          --jars adam-plugins_2.10-0.17.2-SNAPSHOT.jar \
           -- \
           plugin com.github.heuermh.adam.plugins.CountAlignments \
           adam-core/src/test/resources/small.sam
@@ -38,7 +38,7 @@ To run the plugins in this repository via the ADAM command line, add the jar to 
 
 
     $ ./bin/adam-submit \
-          --jars adam-plugins_2.10-0.17.1-SNAPSHOT.jar \
+          --jars adam-plugins_2.10-0.17.2-SNAPSHOT.jar \
           -- \
           plugin com.github.heuermh.adam.plugins.CountAlignmentsPerRead \
           adam-core/src/test/resources/small.sam

@@ -22,12 +22,13 @@ To build
 
 ### Running adam-plugins using ```adam-submit```
 
-To run the plugins in this repository via the ADAM command line, add the jar to the classpath with the Spark ```--jars``` argument.
-Note the ```--``` argument separator between Spark arguments and ADAM arguments.
-
     $ cp target/adam-plugins_2.10-0.17.2-SNAPSHOT.jar $ADAM_DIR
     $ cd $ADAM_DIR
 
+
+To run the plugins in this repository via the ADAM command line, add the jar to the classpath with the Spark ```--jars``` argument.
+
+Note the ```--``` argument separator between Spark arguments and ADAM arguments.
 
 Run plugins
 

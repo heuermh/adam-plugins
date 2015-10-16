@@ -8,7 +8,7 @@
   </parent>
   <groupId>com.github.heuermh.adamplugins</groupId>
   <artifactId>adam-plugins_2.11</artifactId>
-  <version>0.18.0</version>
+  <version>0.18.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>adam-plugins_2.11</name>
@@ -19,7 +19,7 @@
     <connection>scm:git:https://github.com/heuermh/adam-plugins</connection>
     <developerConnection>scm:git:https://github.com/heuermh/adam-plugins</developerConnection>
     <url>https://github.com/heuermh/adam-plugins.git</url>
-    <tag>adam-plugins_2.11-0.18.0</tag>
+    <tag>HEAD</tag>
   </scm>
   <licenses>
     <license>
@@ -268,22 +268,22 @@
       <dependency>
         <groupId>org.bdgenomics.adam</groupId>
         <artifactId>adam-apis_${scala.artifact.suffix}</artifactId>
-        <version>0.18.0</version>
+        <version>0.18.1-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.bdgenomics.adam</groupId>
         <artifactId>adam-cli_${scala.artifact.suffix}</artifactId>
-        <version>0.18.0</version>
+        <version>0.18.1-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.bdgenomics.adam</groupId>
         <artifactId>adam-core_${scala.artifact.suffix}</artifactId>
-        <version>0.18.0</version>
+        <version>0.18.1-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.bdgenomics.adam</groupId>
         <artifactId>adam-core_${scala.artifact.suffix}</artifactId>
-        <version>0.18.0</version>
+        <version>0.18.1-SNAPSHOT</version>
         <type>test-jar</type>
       </dependency>
       <dependency>

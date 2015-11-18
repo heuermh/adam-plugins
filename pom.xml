@@ -8,7 +8,7 @@
   </parent>
   <groupId>com.github.heuermh.adamplugins</groupId>
   <artifactId>adam-plugins_2.10</artifactId>
-  <version>0.18.2</version>
+  <version>0.18.3-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>adam-plugins_2.10</name>
@@ -19,7 +19,7 @@
     <connection>scm:git:https://github.com/heuermh/adam-plugins</connection>
     <developerConnection>scm:git:https://github.com/heuermh/adam-plugins</developerConnection>
     <url>https://github.com/heuermh/adam-plugins.git</url>
-    <tag>adam-plugins_2.10-0.18.2</tag>
+    <tag>HEAD</tag>
   </scm>
   <licenses>
     <license>

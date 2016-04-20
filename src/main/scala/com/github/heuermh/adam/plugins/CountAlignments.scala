@@ -32,7 +32,7 @@ class CountAlignments extends ADAMPlugin[AlignmentRecord, Tuple2[String, Int]] w
    override def predicate: Option[(AlignmentRecord) => Boolean] = None
 
    override def run(sc: SparkContext, recs: RDD[AlignmentRecord], args: String): RDD[Tuple2[String, Int]] = {
-     recs.map(rec => if (rec.getReadMapped) rec.getContig.getContigName else "unmapped")
+     recs.map(rec => if (rec.getReadMapped) rec.getContigName else "unmapped")
        .map(contigName => (contigName, 1))
        .reduceByKey(_ + _)
    }

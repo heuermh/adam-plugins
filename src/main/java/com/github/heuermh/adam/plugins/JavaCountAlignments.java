@@ -53,7 +53,7 @@ public final class JavaCountAlignments extends JavaADAMPlugin<AlignmentRecord, T
         JavaRDD<String> contigNames = recs.map(new Function<AlignmentRecord, String>() {
                 @Override
                 public String call(final AlignmentRecord rec) {
-                    return rec.getReadMapped() ? rec.getContig().getContigName() : "unmapped";
+                    return rec.getReadMapped() ? rec.getContigName() : "unmapped";
                 }
             });
 

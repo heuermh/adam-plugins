@@ -1,6 +1,14 @@
 adam-plugins
 ============
 
+---
+
+NOTE:  The ADAM plugin API was removed in https://github.com/bigdatagenomics/adam/pull/1065.
+
+This project will no longer be updated.
+
+---
+
 External plugins in Java and Scala for ADAM: Genomic Data System.  Apache 2 licensed.
 
 
